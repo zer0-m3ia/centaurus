@@ -39,6 +39,32 @@
 			margin-bottom: 20px;
 		}
 
+		/*- home -*/
+		#home{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0px 10%;
+		}
+		.home-text{
+			max-width: 37rem;
+		}
+		.home-text h4{
+			font-size: 1.5rem;
+			color: var(--green);
+			margin-bottom: 1rem;
+		}
+		.home-text h2{
+			font-size: 4rem;
+			margin-bottom: 1rem;
+			line-height: 4rem;
+		}
+		.home-text p{
+			margin-bottom: 4rem;
+		}
+
 		/* Efeito Parallax
 		-------------------------------*/
 		.caixa1, .caixa2, .caixa3, .caixa4 {
@@ -88,7 +114,7 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(to bottom, #fff, #fff, #fff,#a3a3a3, #022829);">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" style="box-shadow: 0 0.02rem 0.10rem #022829;">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">centaurus gym</a>
 		
@@ -101,32 +127,47 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">login</a>
+							<a class="nav-link active" aria-current="page" href="#home">home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Sobre</a>
+							<a class="nav-link active" aria-current="page" href="#login">login</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Serviços</a>
+							<a class="nav-link" href="#sobre">Sobre</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">locais</a>
+							<a class="nav-link" href="#premium">Premium</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contato</a>
+							<a class="nav-link" href="#locais">locais</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contato">Contato</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
+
+	<section id="home">
+		<div class="home-text">
+			<h4>Bem Vindo a Centaurus Gym</h4>
+			<h2>Fique saudavel, venha pra Centaurus!</h2>
+			<p>Conheca a Centaurus e aproveite nossos diversos descontos!</p>
+		</div>
+		<div class="home-img">
+			<img src="img/centaurus.png" alt="GymLogo">
+		</div>
+	</section>
+
 	<div class="caixa1">
 		<div class="conteudo-titulo">
 			<span class="titulo">Aulas coletivas</span>
 		</div>
 	</div>
 
-	<div class="conteudo">
+	<section class="conteudo" id="login">
 		<h3>Login</h3>
 		<form class="d-flex justify-content-center">
 			<fieldset class="rounded col-md-6" style="border: 1px solid #022829;">
@@ -154,7 +195,7 @@
 			</fieldset>
 		</form>
 		
-	</div>
+	</section>
 
 	<div class="caixa2">
 		<div class="conteudo-titulo">
@@ -162,7 +203,7 @@
 		</div>
 	</div>
 
-	<div class="conteudo">
+	<section class="conteudo" id="premium">
 		<section class="d-flex conteudo2">
             <div class="container col-md-12 my-5">
                 <div class="col-md-6 mx-auto my-5">
@@ -249,7 +290,7 @@
                 </div>                
             </div>
         </section>
-	</div>
+	</section>
 
 	<div class="caixa3">
 		<div class="conteudo-titulo">
@@ -257,12 +298,12 @@
 		</div>
 	</div>
 
-	<div class="conteudo">
+	<section class="conteudo" id="sobre">
 		<h3>Sobre</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
-	</div>
+	</section>
 
 	<div class="caixa4">
 		<div class="conteudo-titulo">
