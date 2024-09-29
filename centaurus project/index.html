@@ -35,7 +35,7 @@
 		}
 		h3 {
 			text-transform: uppercase;
-			color: #111;
+			color: #022829;
 			text-align: center;
 		}
 
@@ -113,13 +113,22 @@
 
 		.conteudo-titulo span.titulo {
 			color: #fff;
-			background-color: #111;
+			background-color: #022829;
 			padding: 18px;
 			font-size: 25px;
 			letter-spacing: 5px;
 			text-transform: uppercase;
 		}
-		
+		ul {
+			list-style: none;
+		}
+		footer {
+			padding: 50px;
+		}
+		footer a {
+			color: white;
+			font-size: 0.8em;
+		}
 		@media (max-width: 760px){
 			.caixa1 {
 				background-image: url(people.jpg);
@@ -186,11 +195,33 @@
 		</div>
 	</div>
 
-	<div class="conteudo">
-		<h3>Parallax</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
-		
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
+	<div class="conteudo" id="login">
+		<h3>Login</h3>
+		<form class="d-flex justify-content-center">
+			<fieldset class="rounded col-md-6" style="border: 1px solid #022829;">
+				<div class="d-flex flex-row justify-content-center" style="border: 1px solid #022829;">
+					<div class="m-2">
+						<input type="text" name="name" placeholder="First name">
+					</div>
+					<div class="m-2">
+						<input type="text" name="name" placeholder="Last name">
+					</div>
+				</div>
+	
+				<div class="d-flex flex-row justify-content-center" style="border: 1px solid #022829;">
+					<div class="m-2">
+						<input type="email" name="email" placeholder="Your email">
+					</div>
+					<div class="m-2">
+						<input type="password" name="password" placeholder="set a password">
+					</div>
+				</div>
+				
+				<div class="d-flex justify-content-center my-2">
+					<button class="btn btn-lg rounded-pill text-decoration-none border border-dark" style="color: #fff; background: #022829;">Create account</button>
+				</div>
+			</fieldset>
+		</form>
 	</div>
 
 	<div class="caixa2">
@@ -290,12 +321,12 @@
 
 	<div class="caixa3">
 		<div class="conteudo-titulo">
-			<span class="titulo">system corrupted</span>
+			<span class="titulo">Estudio fitness</span>
 		</div>
 	</div>
 
 	<div class="conteudo">
-		<h3>Parallax</h3>
+		<h3>Sobre</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
@@ -307,5 +338,35 @@
 		</div>
 	</div>
 
+	<footer class="d-flex bg-black">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<a href="#inicio"><img src="centaurus.jpg" width="32px"></a>
+				</div>
+				<div class="col-md-6">
+					<h6>company</h6>
+					<ul>
+						<li><a href="#">Sobre</a></li>
+						<li><a href="#">serviços</a></li>
+						<li><a href="#">locais</a></li>
+					</ul>
+				</div>
+					
+				<div class="col-md-4">
+					<ul>
+						<li>
+							<a href="#"><img src="instagram.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="facebook.png"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
