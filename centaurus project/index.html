@@ -97,16 +97,10 @@
 			background-size: 70%; 
 		}
 		.card {
-			border-radius: 10px;
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.322);
-			width: 300px;
-			margin: 10px;
 			transition: transform 0.3s;
 			cursor: pointer;
-			padding: 10px;
 			text-align: center;
-			display: flex;
-			align-items: center;
 			background-image: url(fundo3.png);
 		}
 		
@@ -162,9 +156,8 @@
 		.caixa4 {
 			background-image: url(woman.jpg);
 		}
-		/*-------------------------------
-		Efeito Parallax fim
-		 */
+		/*Efeito Parallax fim
+		-------------------------------*/
 
 		 .conteudo {
 			text-align: justify;
@@ -203,17 +196,7 @@
 		plano centaurus
 		 */
 		.card {
-			border-radius: 10px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.322);
-			width: 300px;
-			margin: 10px;
-			transition: transform 0.3s;
-			cursor: pointer;
-			padding: 10px;
-			text-align: center;
-			display: flex;
-			align-items: center;
-			background-image: url(fundo3.png);
+			
 		}
 		@media (max-width: 760px){
 			.caixa1 {
@@ -256,7 +239,7 @@
 							<a class="nav-link" href="#locais">Locais</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#contato">Contato</a>
+							<a class="nav-link" href="https://wa.me/message/FW6E4RUGZFX2P1" target="_blank" >Contato</a>
 						</li>
 					</ul>
 				</div>
@@ -283,12 +266,15 @@
 
 	<div class="endereco-container" id="locais">
 		<div>
-			<h1 class="text-dark text-center ps-5 mx-auto">Endereços</h1>
+			<h1 class="text-dark text-center mx-auto">Endereços</h1>
 			<!-- botão para os endereços -->
-			<button class="toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#enderecos" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<ul id="enderecos">
+			<div style="margin: 0 45%;">
+				<button class="toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#enderecos" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			
+			<ul id="enderecos" style="padding: 0;">
 				<a href="https://www.google.com.br/maps/place/Rua+Mariz+e+Barros,+70+-+Icara%C3%AD,+Niter%C3%B3i+-+RJ,+24220-121/@-22.9097031,-43.1107621,17z/data=!3m1!4b1!4m6!3m5!1s0x9983e2967744e5:0xb0908abbdd3643f1!8m2!3d-22.9097081!4d-43.1081872!16s%2Fg%2F11c25fjmwr?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
 					<div class="card-end" href=""> Niterói I (Matriz) - 
 						Rua Mariz e Barros, 70 -
@@ -427,9 +413,9 @@
                 <div class="col-md-6 mx-auto my-5">
                     <h1 class="text-white text-center ps-5 mx-auto">Escolha seu plano centaurus</h1>
                 </div>         
-                <div class="row col-md-12 my-5">
-                    <div class="card-group">
-                        <div class="card" style="width: 18rem;">
+                <div class="row row-cols-1 row-cols-2 row-cols-4 g-2">
+                    <div class="col" style="min-width: 200px;">
+                        <div class="card h-100">
                             <div class="card-body">
                                 <button class="btn btn-primary disabled" type="button">1 semana grátis com a assinatura*</button>
                                 
@@ -447,12 +433,13 @@
                                 <p>Preço válido apenas para o plano Individual Power.<a href=""> Sujeito a Termos e Condições.</a> *Oferta disponível apenas para novo registros</p>
                             </div>
                         </div>
-
-                        <div class="card" style="width: 18rem;">
+					</div>
+					<div class="col" style="min-width: 200px;">
+                        <div class="card h-100">
                             <div class="card-body">
                                 <button class="btn btn-primary disabled" type="button">1 semana grátis com a assinatura</button>
                                 
-                                <h3 class="card-title">Da galera</h3>
+                                <h3 class="card-title">plano da galera</h3>
                                 <p class="card-text">R$ 50/mês após o período da oferta</p>
                             </div>
                             <ul class="list-group list-group-flush">
@@ -466,8 +453,9 @@
                                 <p>Preço válido apenas para o plano Da galera.<a href=""> Sujeito a Termos e Condições.</a> *Oferta disponível apenas para novo registros</p>
                             </div>
                         </div>
-
-                        <div class="card" style="width: 18rem;">
+					</div>
+					<div class="col" style="min-width: 200px;">
+                        <div class="card h-100">
                             <div class="card-body">
                                 <button class="btn btn-primary disabled" type="button">1 semana grátis com a assinatura</button>
                                 
@@ -485,8 +473,9 @@
                                 <p>Preço válido apenas para o plano Individual Super Power.<a href=""> Sujeito a Termos e Condições.</a> *Oferta disponível apenas para novo registros</p>
                             </div>
                         </div>
-
-                        <div class="card" style="width: 18rem;">
+					</div>
+					<div class="col" style="min-width: 200px;">
+                        <div class="card h-100">
                             <div class="card-body">
                                 <button class="btn btn-primary disabled" type="button">1 semana grátis com a assinatura</button>
                                 
