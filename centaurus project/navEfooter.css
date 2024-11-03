@@ -1,0 +1,22 @@
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+footer {
+    padding: 50px;
+}
+footer a {
+    color: white;
+    font-size: 0.8em;
+    
+}
